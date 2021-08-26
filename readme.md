@@ -20,9 +20,9 @@
 
 ## Strategy
 
-[![Image](https://raw.githubusercontent.com/devsuperior/aula-dp1/main/img/strategy.png "Strategy")]
+![Image](https://raw.githubusercontent.com/devsuperior/aula-dp1/main/img/strategy.png "Strategy")
 
 
 ## Template method
 
-[![Image](https://raw.githubusercontent.com/devsuperior/aula-dp1/main/img/template-method.png "Template method")]
+![Image](https://raw.githubusercontent.com/devsuperior/aula-dp1/main/img/template-method.png "Template method")
