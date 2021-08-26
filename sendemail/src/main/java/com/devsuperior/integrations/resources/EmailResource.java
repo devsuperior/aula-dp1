@@ -8,14 +8,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.devsuperior.integrations.dto.EmailDTO;
-import com.devsuperior.integrations.services.EmailService;
+import com.devsuperior.integrations.services.SendgridService;
 
 @RestController
 @RequestMapping(value = "/emails")
 public class EmailResource {
 
 	@Autowired
-	private EmailService service;
+	private SendgridService service;
 	
 	@PostMapping
 	public ResponseEntity<EmailDTO> insert(@RequestBody EmailDTO dto) {

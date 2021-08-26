@@ -19,9 +19,9 @@ import com.sendgrid.helpers.mail.objects.Content;
 import com.sendgrid.helpers.mail.objects.Email;
 
 @Service
-public class EmailService {
+public class SendgridService {
 
-	private Logger LOG = LoggerFactory.getLogger(EmailService.class);
+	private Logger LOG = LoggerFactory.getLogger(SendgridService.class);
 
 	@Autowired
 	private Environment env;
@@ -34,7 +34,7 @@ public class EmailService {
 		callEmailAPI(mail);
 	}
 	
-	protected Mail prepareEmail(EmailDTO dto) {
+	public Mail prepareEmail(EmailDTO dto) {
 		Email from = new Email(dto.getFromEmail(), dto.getFromName());
 		Email to = new Email(dto.getTo());
 		Content content = new Content(dto.getContentType(), dto.getBody());
